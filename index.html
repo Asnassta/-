@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<title>АЛТЭЙ</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="arrow-icon" viewBox="0 0 43 46">
+			<g>
+				<path d="M36.7071 23.7071C37.0976 23.3166 37.0976 22.6834 36.7071 22.2929L30.3431 15.9289C29.9526 15.5384 29.3195 15.5384 28.9289 15.9289C28.5384 16.3195 28.5384 16.9526 28.9289 17.3431L34.5858 23L28.9289 28.6569C28.5384 29.0474 28.5384 29.6805 28.9289 30.0711C29.3195 30.4616 29.9526 30.4616 30.3431 30.0711L36.7071 23.7071ZM7 24L36 24V22L7 22V24Z"/>
+			</g>
+		</symbol>
+		<symbol id="close-icon" viewBox="0 0 31 31">
+			<g>
+				<path d="M4.15812 5.52938C4.06805 5.43931 3.9966 5.33238 3.94786 5.2147C3.89911 5.09702 3.87402 4.97089 3.87402 4.84351C3.87402 4.71613 3.89911 4.59 3.94786 4.47232C3.9966 4.35463 4.06805 4.2477 4.15812 4.15763C4.24819 4.06756 4.35512 3.99612 4.4728 3.94737C4.59049 3.89862 4.71662 3.87354 4.844 3.87354C4.97138 3.87354 5.09751 3.89862 5.21519 3.94737C5.33287 3.99612 5.4398 4.06756 5.52987 4.15763L15.5002 14.1299L25.4706 4.15763C25.5607 4.06756 25.6676 3.99612 25.7853 3.94737C25.903 3.89862 26.0291 3.87354 26.1565 3.87354C26.2839 3.87354 26.41 3.89862 26.5277 3.94737C26.6454 3.99612 26.7523 4.06756 26.8424 4.15763C26.9324 4.2477 27.0039 4.35463 27.0526 4.47232C27.1014 4.59 27.1265 4.71613 27.1265 4.84351C27.1265 4.97089 27.1014 5.09702 27.0526 5.2147C27.0039 5.33238 26.9324 5.43931 26.8424 5.52938L16.8701 15.4998L26.8424 25.4701C26.9324 25.5602 27.0039 25.6671 27.0526 25.7848C27.1014 25.9025 27.1265 26.0286 27.1265 26.156C27.1265 26.2834 27.1014 26.4095 27.0526 26.5272C27.0039 26.6449 26.9324 26.7518 26.8424 26.8419C26.7523 26.932 26.6454 27.0034 26.5277 27.0521C26.41 27.1009 26.2839 27.126 26.1565 27.126C26.0291 27.126 25.903 27.1009 25.7853 27.0521C25.6676 27.0034 25.5607 26.932 25.4706 26.8419L15.5002 16.8696L5.52987 26.8419C5.4398 26.932 5.33287 27.0034 5.21519 27.0521C5.09751 27.1009 4.97138 27.126 4.844 27.126C4.71662 27.126 4.59049 27.1009 4.4728 27.0521C4.35512 27.0034 4.24819 26.932 4.15812 26.8419C4.06805 26.7518 3.9966 26.6449 3.94786 26.5272C3.89911 26.4095 3.87402 26.2834 3.87402 26.156C3.87402 26.0286 3.89911 25.9025 3.94786 25.7848C3.9966 25.6671 4.06805 25.5602 4.15812 25.4701L14.1304 15.4998L4.15812 5.52938Z"/>
+			</g>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<header class="header header_transparent">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<div class="header__menu">
+						<nav class="header__nav">
+							<div class="header__link header__link_drop">
+								<span>О компании</span>
+								<div class="header__dropdown">
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+								</div>
+							</div>
+							<div class="header__link header__link_drop">
+								<span>Продукты</span>
+								<div class="header__dropdown">
+									<a href="#">Продукты</a>
+									<a href="#">Продукты</a>
+									<a href="#">Продукты</a>
+								</div>
+							</div>
+							<div class="header__link header__link_drop">
+								<span>Услуги</span>
+								<div class="header__dropdown">
+									<a href="#">Услуги</a>
+									<a href="#">Услуги</a>
+								</div>
+							</div>
+							<a href="#" class="header__link">Новости</a>
+							<a href="#" class="header__link">Контакты</a>
+						</nav>
+						<div class="header__contact">
+							<div class="header__links">
+								<a href="tel:+74951234567" class="">
+									<img src="assets/images/phone.svg" alt="">
+									<span>+7 (495) 123-45-67</span>
+								</a>
+								<a href="mailto:marketing@test.ru" class="">
+									<img src="assets/images/email.svg" alt="">
+									<span>marketing@test.ru</span>
+								</a>
+							</div>
+							<a href="#" class="btn open-popup" data-popup="popup-form">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="burger">
+						<div class="burger__item">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<section class="intro">
+				<div class="container">
+					<div class="intro__info">
+						<h1 class="title">Программное обеспечение<br> для медицинских лабораторий</h1>
+						<div class="intro__description">Мы предоставляем комплекс услуг по оптимизации бизнес-процессов клинико-диагностических лабораторий и созданию автоматизированных систем управления с использованием наших типовых решений.</div>
+					</div>
+					<div class="intro__links">
+						<a href="#" class="intro__link">
+							<img src="assets/images/system-icon_1.png" alt="">
+							<span>Лабораторные системы</span>
+						</a>
+						<a href="#" class="intro__link">
+							<img src="assets/images/system-icon_2.png" alt="">
+							<span>Внедрение и сопровождение</span>
+						</a>
+						<a href="#" class="intro__link">
+							<img src="assets/images/system-icon_3.png" alt="">
+							<span>Подключение анализаторов</span>
+						</a>
+						<a href="#" class="intro__link">
+							<img src="assets/images/system-icon_4.png" alt="">
+							<span>Интеграция</span>
+						</a>
+					</div>
+					<div class="intro__items">
+						<a href="#" class="intro__item">
+							<img src="assets/images/service-icon_1.svg" alt="">
+							<span>Информация<br> о компании</span>
+						</a>
+						<a href="#" class="intro__item">
+							<img src="assets/images/service-icon_2.svg" alt="">
+							<span>Лабораторная информ. система АЛТЭЙ</span>
+						</a>
+						<a href="#" class="intro__item">
+							<img src="assets/images/service-icon_3.svg" alt="">
+							<span>1С:Медицина.<br>Клиническая лаборатория</span>
+						</a>
+						<a href="#" class="intro__item">
+							<img src="assets/images/service-icon_4.svg" alt="">
+							<span>Услуги для медицинских лабораторий</span>
+						</a>
+					</div>
+				</div>
+			</section><!--/intro-->
+			<section class="achievement">
+				<div class="container">
+					<div class="achievement__info">
+						<h2 class="title">Наши достижения</h2>
+						<div class="description">« Группа АЛТЭЙ» является ведущим российским разработчиком лабораторных информационных систем. История компании начинается с 1996 года. С декабря 1997 года компания представляет свою торговую марку АЛТЭЙ, ставшую признанным лидером на рынке лабораторных информационных систем.</div>
+					</div>
+					<div class="achievement__inner">
+						<div class="achievement__item">
+							<div class="achievement__data">50 млн+</div>
+							<div class="achievement__description">Выполненных исследований</div>
+						</div><!--/achievement__item-->
+						<div class="achievement__item">
+							<div class="achievement__data">100+</div>
+							<div class="achievement__description">Внедрений ЛИС АЛТЭЙ</div>
+						</div><!--/achievement__item-->
+						<div class="achievement__item">
+							<div class="achievement__data">10 000+</div>
+							<div class="achievement__description">Специалистов используют нашу систему</div>
+						</div><!--/achievement__item-->
+						<div class="achievement__item">
+							<div class="achievement__data">ЛИС АЛТЭЙ</div>
+							<div class="achievement__description">Включена в реестр отечественного программного обеспечения</div>
+						</div><!--/achievement__item-->
+					</div>
+				</div>
+			</section><!--/achievement-->
+			<section class="about">
+				<div class="container">
+					<h2 class="title">Компания Алтэй</h2>
+					<div class="about__description">
+						<p>« Группа АЛТЭЙ» является ведущим российским разработчиком лабораторных информационных систем. История компании начинается с 1996 года. С декабря 1997 года компания представляет свою торговую марку АЛТЭЙ, ставшую признанным лидером на рынке лабораторных информационных систем.</p>
+						<p>В настоящее время флагманским продуктом ООО «Группа АЛТЭЙ» является Лабораторная информационная система АЛТЭЙ, в которой 15-летний опыт компании в области автоматизации лабораторий реализован в новом качестве на передовых средствах разработки.</p>
+					</div>
+					<a href="#" class="btn-transparent">
+						<span>Подробнее</span>
+						<img src="assets/images/arrow.svg" alt="">
+					</a>
+				</div>
+			</section><!--/about-->
+			<section class="news">
+				<div class="container">
+					<div class="news__header">
+						<h2 class="title">Новости компании</h2>
+						<a href="#" class="link">
+							<span>Все новости</span>
+							<img src="assets/images/arrow.svg" alt="">
+						</a>
+					</div>
+					<div class="news-list">
+						<div class="news__box">
+							<div class="news__data">11 Ноября 2022 г.</div>
+							<div class="news__content">
+								<a href="#" class="news__title">Выпущен релиз "1С: Медицина. Клиническая лаборатория" 1.1.7.5 - 11.06.2022 10:03</a>
+								<div class="news__description">Лабораторная информационная система АЛТЭЙ принята в промышленную эксплуатацию в клинике "Медицина". Автоматизированы рабочие места врачей КЛД и лаборантов в лабораториях и процедурных кабинетах. Обеспечена штрих-кодовая маркировка проб. К ЛИС подключено 20 лабораторных анализаторов. Реализовано взаимодействие с медицинской информационной системой "Инфоклиника". </div>
+								<a href="#" class="news-link">Читать далее</a>		
+							</div>
+						</div><!--/news__box-->
+						<div class="news__box">
+							<div class="news__data">10 Ноября 2022 г.</div>
+							<div class="news__content">
+								<a href="#" class="news__title">Выпущен релиз "1С: Медицина. Клиническая лаборатория" 1.1.7.3 - 10.06.2022 10:05</a>
+								<div class="news__description">Лабораторная информационная система АЛТЭЙ принята в промышленную эксплуатацию в клинике "Медицина". Автоматизированы рабочие места врачей КЛД и лаборантов в лабораториях и процедурных кабинетах. Обеспечена штрих-кодовая маркировка проб. К ЛИС подключено 20 лабораторных анализаторов. Реализовано взаимодействие с медицинской информационной системой "Инфоклиника". </div>
+								<a href="#" class="news-link">Читать далее</a>		
+							</div>
+						</div><!--/news__box-->
+						<div class="news__box">
+							<div class="news__data">9 Ноября 2022 г.</div>
+							<div class="news__content">
+								<a href="#" class="news__title">Выпущен релиз "1С: Медицина. Клиническая лаборатория" 1.1.7.1 - 10.06.2022 08:05</a>
+								<div class="news__description">Лабораторная информационная система АЛТЭЙ принята в промышленную эксплуатацию в клинике "Медицина". Автоматизированы рабочие места врачей КЛД и лаборантов в лабораториях и процедурных кабинетах. Обеспечена штрих-кодовая маркировка проб. К ЛИС подключено 20 лабораторных анализаторов. Реализовано взаимодействие с медицинской информационной системой "Инфоклиника". </div>
+								<a href="#" class="news-link">Читать далее</a>		
+							</div>
+						</div><!--/news__box-->
+					</div><!--/news-list-->
+				</div>
+			</section><!--/news-->
+			<section class="clients">
+				<div class="container">
+					<div class="clients__header">
+						<h2 class="title">Наши клиенты</h2>
+						<div class="slider-arrows">
+							<div class="slider-arrow slider-arrow_prev">
+								<svg>
+									<use xlink:href="#arrow-icon"></use>
+								</svg>
+							</div>
+							<div class="slider-arrow slider-arrow_next">
+								<svg>
+									<use xlink:href="#arrow-icon"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="clients__slider">
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_1.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_2.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_3.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_4.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_1.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_2.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_3.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+						<div class="clients__slide">
+							<div class="clients__item">
+								<img src="assets/images/clients-icon_4.svg" alt="">
+							</div>
+						</div><!--/clients__slide-->
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__row">
+						<a href="/" class="footer__logo">
+							<img src="assets/images/logo-wh.svg">
+						</a>
+						<nav class="footer-nav">
+							<a href="#" class="footer-nav__link">О компании</a>
+							<a href="#" class="footer-nav__link">Продукты</a>
+							<a href="#" class="footer-nav__link">Услуги</a>
+							<a href="#" class="footer-nav__link">Новости</a>
+							<a href="#" class="footer-nav__link">Контакты</a>
+						</nav>
+					</div>
+					<div class="footer__search">
+						<input type="text" placeholder="Поиск по сайту">
+						<button type="submit">
+							<img src="assets/images/search.svg" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="footer__foot">
+					<div class="footer-contact">
+						<div class="footer-contact__title">Связаться с нами</div>
+						<div class="footer-contact__links">
+							<a href="tel:+74953142924 " class="footer-contact__link">+7 (495) 314-29-24 </a>
+							<a href="mailto:marketing@altey.ru" class="footer-contact__link">marketing@altey.ru</a>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div>
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+							<div class="footer__copyright">© 1996 - 2022 ООО «Группа АЛТЭЙ»</div>
+						</div>
+						<a href="#" class="footer__icon">
+							<img src="assets/images/logo_skolkovo.svg">
+						</a>
+					</div>
+				</div>	
+			</div>
+		</footer>
+
+		<div class="popup popup-form">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<span class="popup__close">
+				<svg>
+					<use xlink:href="#close-icon"></use>
+				</svg>
+			</span>
+			<div class="popup__box">
+				<div class="popup__content">
+					<h2 class="title">Получить консультацию</h2>
+					<form action="#" class="form">
+						<div class="form__inner">
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="text" placeholder="Имя*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="email" placeholder="Email*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="text" placeholder="Телефон*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item">
+								<div class="form__input">
+									<textarea placeholder="Текст сообщения"></textarea>
+								</div>
+							</div><!--/form__item-->
+						</div>
+						<div class="form-checkbox">
+							<input type="checkbox" id="agree-check">
+							<label for="agree-check">
+								<span></span>
+								<i>Подтверждаю, что я ознакомлен и согласен с политикой обработки персональных данных.</i>
+							</label>
+						</div>
+						<button class="btn" type="submit">Отправить</button>
+					</form><!--/form-->
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-form-->
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+</body>
+</html>
