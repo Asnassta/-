@@ -562,7 +562,15 @@
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #292929; }
+  color: #292929;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-filter: drop-shadow(0 0 0 #fff);
+  filter: drop-shadow(0 0 0 #fff);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
   .form__input input::-webkit-input-placeholder, .form__input textarea::-webkit-input-placeholder {
     color: #989898;
     opacity: 1; }
