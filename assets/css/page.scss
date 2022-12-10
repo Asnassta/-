@@ -212,6 +212,10 @@
 			font-weight: 400;
 			color: $wh;
 			line-height: $lh;
+			border-radius: 0;
+			box-shadow: none;
+			filter: drop-shadow(0 0 0 #fff);
+			appearance:none;
 			&::placeholder {
 				color: $wh;
 				opacity: 1;
