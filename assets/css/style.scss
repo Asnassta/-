@@ -3,6 +3,7 @@
 @import 'page.scss';
 @import 'popup.scss';
 @import 'form.scss';
+@import 'pages.scss';
 
 
 /*Reset
@@ -461,7 +462,7 @@ body.hidden {
 
 /*=========Clients===========*/
 .clients {
-	margin: 250px 0;
+	margin-top: 250px;
 	&__header {
 		margin-bottom: 50px;
 		display: flex;
@@ -505,7 +506,7 @@ body.hidden {
 	}
 
 	.clients {
-		margin: 150px 0;
+		margin-top: 150px;
 	}
 }
 
@@ -560,7 +561,7 @@ body.hidden {
 	}
 
 	.clients {
-		margin: 100px 0;
+		margin-top: 100px;
 		.slick-slider {
 			margin-left: -15px;
 		}
@@ -675,7 +676,7 @@ body.hidden {
 	}
 
 	.clients {
-		margin: 60px 0;
+		margin-top: 60px;
 	}
 }
 /*==========/adaptive==========*/
