@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<title>АЛТЭЙ</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="arrow-right" viewBox="0 0 20 20">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M5.80764 2.05764C5.8657 1.99944 5.93467 1.95326 6.0106 1.92175C6.08653 1.89024 6.16793 1.87402 6.25014 1.87402C6.33235 1.87402 6.41375 1.89024 6.48968 1.92175C6.56561 1.95326 6.63458 1.99944 6.69264 2.05764L14.1926 9.55764C14.2508 9.6157 14.297 9.68467 14.3285 9.7606C14.36 9.83653 14.3763 9.91793 14.3763 10.0001C14.3763 10.0823 14.36 10.1638 14.3285 10.2397C14.297 10.3156 14.2508 10.3846 14.1926 10.4426L6.69264 17.9426C6.57528 18.06 6.41611 18.1259 6.25014 18.1259C6.08417 18.1259 5.925 18.06 5.80764 17.9426C5.69028 17.8253 5.62435 17.6661 5.62435 17.5001C5.62435 17.3342 5.69028 17.175 5.80764 17.0576L12.8664 10.0001L5.80764 2.94264C5.74944 2.88458 5.70326 2.81561 5.67175 2.73968C5.64024 2.66375 5.62402 2.58235 5.62402 2.50014C5.62402 2.41793 5.64024 2.33653 5.67175 2.2606C5.70326 2.18467 5.74944 2.1157 5.80764 2.05764Z"/>
+			</g>
+		</symbol>
+		<symbol id="arrow-icon" viewBox="0 0 43 46">
+			<g>
+				<path d="M36.7071 23.7071C37.0976 23.3166 37.0976 22.6834 36.7071 22.2929L30.3431 15.9289C29.9526 15.5384 29.3195 15.5384 28.9289 15.9289C28.5384 16.3195 28.5384 16.9526 28.9289 17.3431L34.5858 23L28.9289 28.6569C28.5384 29.0474 28.5384 29.6805 28.9289 30.0711C29.3195 30.4616 29.9526 30.4616 30.3431 30.0711L36.7071 23.7071ZM7 24L36 24V22L7 22V24Z"/>
+			</g>
+		</symbol>
+		<symbol id="close-icon" viewBox="0 0 31 31">
+			<g>
+				<path d="M4.15812 5.52938C4.06805 5.43931 3.9966 5.33238 3.94786 5.2147C3.89911 5.09702 3.87402 4.97089 3.87402 4.84351C3.87402 4.71613 3.89911 4.59 3.94786 4.47232C3.9966 4.35463 4.06805 4.2477 4.15812 4.15763C4.24819 4.06756 4.35512 3.99612 4.4728 3.94737C4.59049 3.89862 4.71662 3.87354 4.844 3.87354C4.97138 3.87354 5.09751 3.89862 5.21519 3.94737C5.33287 3.99612 5.4398 4.06756 5.52987 4.15763L15.5002 14.1299L25.4706 4.15763C25.5607 4.06756 25.6676 3.99612 25.7853 3.94737C25.903 3.89862 26.0291 3.87354 26.1565 3.87354C26.2839 3.87354 26.41 3.89862 26.5277 3.94737C26.6454 3.99612 26.7523 4.06756 26.8424 4.15763C26.9324 4.2477 27.0039 4.35463 27.0526 4.47232C27.1014 4.59 27.1265 4.71613 27.1265 4.84351C27.1265 4.97089 27.1014 5.09702 27.0526 5.2147C27.0039 5.33238 26.9324 5.43931 26.8424 5.52938L16.8701 15.4998L26.8424 25.4701C26.9324 25.5602 27.0039 25.6671 27.0526 25.7848C27.1014 25.9025 27.1265 26.0286 27.1265 26.156C27.1265 26.2834 27.1014 26.4095 27.0526 26.5272C27.0039 26.6449 26.9324 26.7518 26.8424 26.8419C26.7523 26.932 26.6454 27.0034 26.5277 27.0521C26.41 27.1009 26.2839 27.126 26.1565 27.126C26.0291 27.126 25.903 27.1009 25.7853 27.0521C25.6676 27.0034 25.5607 26.932 25.4706 26.8419L15.5002 16.8696L5.52987 26.8419C5.4398 26.932 5.33287 27.0034 5.21519 27.0521C5.09751 27.1009 4.97138 27.126 4.844 27.126C4.71662 27.126 4.59049 27.1009 4.4728 27.0521C4.35512 27.0034 4.24819 26.932 4.15812 26.8419C4.06805 26.7518 3.9966 26.6449 3.94786 26.5272C3.89911 26.4095 3.87402 26.2834 3.87402 26.156C3.87402 26.0286 3.89911 25.9025 3.94786 25.7848C3.9966 25.6671 4.06805 25.5602 4.15812 25.4701L14.1304 15.4998L4.15812 5.52938Z"/>
+			</g>
+		</symbol>
+	</svg>
+	<div class="wrapper page">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<div class="header__menu">
+						<nav class="header__nav">
+							<div class="header__link header__link_drop">
+								<span>О компании</span>
+								<div class="header__dropdown">
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+									<a href="#">О компании</a>
+								</div>
+							</div>
+							<div class="header__link header__link_drop">
+								<span>Продукты</span>
+								<div class="header__dropdown">
+									<a href="#">Продукты</a>
+									<a href="#">Продукты</a>
+									<a href="#">Продукты</a>
+								</div>
+							</div>
+							<div class="header__link header__link_drop">
+								<span>Услуги</span>
+								<div class="header__dropdown">
+									<a href="#">Услуги</a>
+									<a href="#">Услуги</a>
+								</div>
+							</div>
+							<a href="#" class="header__link">Новости</a>
+							<a href="#" class="header__link">Контакты</a>
+						</nav>
+						<div class="header__contact">
+							<div class="header__links">
+								<a href="tel:+74951234567" class="">
+									<img src="assets/images/phone.svg" alt="">
+									<span>+7 (495) 123-45-67</span>
+								</a>
+								<a href="mailto:marketing@test.ru" class="">
+									<img src="assets/images/email.svg" alt="">
+									<span>marketing@test.ru</span>
+								</a>
+							</div>
+							<a href="#" class="btn open-popup" data-popup="popup-form">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="burger">
+						<div class="burger__item">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!--/header-->
+		<main class="main">
+			<div class="page-intro">
+				<div class="container">
+					<h1 class="title">Наши услуги</h1>
+					<div class="breadcrumbs">
+						<a href="/" class="breadcrumbs__item">
+							<img src="assets/images/house-icon.svg" alt="">
+							<span>Главная</span>
+						</a>
+						<a href="#" class="breadcrumbs__item">Наши услуги</a>
+					</div>
+				</div>
+			</div><!--/page-intro-->
+			<div class="page-block">
+				<div class="container">
+					<div class="page-inner">
+						<div class="page-content">
+							<div class="product">
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+								<div class="product__box">
+									<div class="product__info">
+										<a href="#" class="product__title">Создание комплексных систем</a>
+										<div class="product__description">Полный цикл разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов. Полный цикл разработки разработки разработки от проекта до запуска, техническая поддержка, масштабирование, создание прототипов.</div>
+									</div>
+									<a href="#" class="product__photo">
+										<img src="assets/images/labor-system_2.png" alt="">
+									</a>
+								</div><!--/product__box-->
+							</div><!--/product-->
+							<div class="page-nav">
+								<div class="page-nav__inner">
+									<a href="#" class="page-nav__link active">1</a>
+									<a href="#" class="page-nav__link">2</a>
+									<a href="#" class="page-nav__link">3</a>
+									<a href="#" class="page-nav__link">4</a>
+									<a href="#" class="page-nav__arrow">
+										<svg>
+											<use xlink:href="#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div><!--/page-nav-->
+						</div><!--/page-content-->
+						<div class="page-sidebar">
+							<div class="page-sidebar__block">
+								<h3 class="page-sidebar__title">Отдел продаж</h3>
+								<div class="page-contact">
+									<div class="page-contact__item">
+										<div class="page-contact__title">Телефон:</div>
+										<a href="tel:+74953142924" class="page-contact__link">+7 (495) 314-29-24</a>
+									</div>
+									<div class="page-contact__item">
+										<div class="page-contact__title">Почта:</div>
+										<a href="mailto:marketing@altey.ru" class="page-contact__link">marketing@altey.ru</a>
+									</div>
+								</div><!--/page-contact-->
+							</div>
+						</div><!--/page-sidebar-->
+					</div>
+				</div>
+			</div><!--/page-block-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__menu">
+					<div class="footer__row">
+						<a href="/" class="footer__logo">
+							<img src="assets/images/logo-wh.svg">
+						</a>
+						<nav class="footer-nav">
+							<a href="#" class="footer-nav__link">О компании</a>
+							<a href="#" class="footer-nav__link">Продукты</a>
+							<a href="#" class="footer-nav__link">Услуги</a>
+							<a href="#" class="footer-nav__link">Новости</a>
+							<a href="#" class="footer-nav__link">Контакты</a>
+						</nav>
+					</div>
+					<div class="footer__search">
+						<input type="text" placeholder="Поиск по сайту">
+						<button type="submit">
+							<img src="assets/images/search.svg" alt="">
+						</button>
+					</div>
+				</div>
+				<div class="footer__foot">
+					<div class="footer-contact">
+						<div class="footer-contact__title">Связаться с нами</div>
+						<div class="footer-contact__links">
+							<a href="tel:+74953142924 " class="footer-contact__link">+7 (495) 314-29-24 </a>
+							<a href="mailto:marketing@altey.ru" class="footer-contact__link">marketing@altey.ru</a>
+						</div>
+					</div>
+					<div class="footer__block">
+						<div>
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+							<div class="footer__copyright">© 1996 - 2022 ООО «Группа АЛТЭЙ»</div>
+						</div>
+						<a href="#" class="footer__icon">
+							<img src="assets/images/logo_skolkovo.svg">
+						</a>
+					</div>
+				</div>	
+			</div>
+		</footer>
+
+		<div class="popup popup-form">
+		<div class="closex"></div>
+		<div class="popup__inner">
+			<span class="popup__close">
+				<svg>
+					<use xlink:href="#close-icon"></use>
+				</svg>
+			</span>
+			<div class="popup__box">
+				<div class="popup__content">
+					<h2 class="title">Получить консультацию</h2>
+					<form action="#" class="form">
+						<div class="form__inner">
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="text" placeholder="Имя*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="email" placeholder="Email*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item form__item_small">
+								<div class="form__input">
+									<input type="text" placeholder="Телефон*">
+								</div>
+							</div><!--/form__item-->
+							<div class="form__item">
+								<div class="form__input">
+									<textarea placeholder="Текст сообщения"></textarea>
+								</div>
+							</div><!--/form__item-->
+						</div>
+						<div class="form-checkbox">
+							<input type="checkbox" id="agree-check">
+							<label for="agree-check">
+								<span></span>
+								<i>Подтверждаю, что я ознакомлен и согласен с политикой обработки персональных данных.</i>
+							</label>
+						</div>
+						<button class="btn" type="submit">Отправить</button>
+					</form><!--/form-->
+				</div>
+    	    </div>
+		</div>
+	</div><!--/popup-form-->
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+</body>
+</html>

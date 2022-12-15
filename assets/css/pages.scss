@@ -80,6 +80,13 @@
 			right: 0;
 			z-index: 1;
 		}
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+		.title {
+			max-width: 830px;
+		}
 	}
 	&-nav {
 		margin-top: 60px;
@@ -562,6 +569,106 @@
 }
 /*==========/contact==========*/
 
+/*===========Product========*/
+.product {
+	&__box {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 60px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__photo {
+		display: block;
+		width: 24%;
+		min-width: 160px;
+		img {
+			width: 100%;
+		}
+	}
+	&__info {
+		width: 76%;
+		margin-right: 25px;
+		border-bottom: 1px solid $gray2;
+		padding-bottom: 30px;
+	}
+	&__title {
+		font-family: $ff;
+		font-size: 24px;
+		font-weight: 500;
+		color: $bl;
+		line-height: 1.5;
+		transition: all .2s linear;
+		display: inline-block;
+		margin-bottom: 10px;
+		@media(max-width: 1920px) {
+			@include adaptive-font(24, 16);
+		}
+		&:hover {
+			color: $d-blue;
+		}
+	}
+	&__description {
+		font-family: $ff;
+		font-size: 18px;
+		font-weight: 400;
+		color: $bl;
+		line-height: $lh;
+		@media(max-width: 1920px) {
+			@include adaptive-font(18, 14);
+		}
+	}
+}
+/*===========/product========*/
+
+/*==========Documents==========*/
+.documents {
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 60px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:hover {
+			.documents__title {
+				color: $d-blue;
+			}
+		}
+	}
+	&__icon {
+		margin-right: 24px;
+	}
+	&__title {
+		font-family: $ff;
+		font-size: 24px;
+		font-weight: 500;
+		color: $bl;
+		line-height: 1.5;
+		transition: all .2s linear;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-right: 20px;
+		@media(max-width: 1920px) {
+			@include adaptive-font(24, 14);
+		}
+	}
+	&__data {
+		margin-left: auto;
+		font-family: $ff;
+		font-size: 20px;
+		font-weight: 400;
+		color: $gray;
+		line-height: $lh;
+		white-space: nowrap;
+		@media(max-width: 1920px) {
+			@include adaptive-font(20, 14);
+		}
+	}
+}
+/*==========/documents==========*/
+
 /*============Adaptive=======*/
 @media(max-width: 1170px) {
 	.page {
@@ -602,6 +709,18 @@
 					margin-bottom: 10px;
 				}
 			}
+		}
+	}
+
+	.product {
+		&__box {
+			margin-bottom: 30px;
+		}
+		&__info {
+			padding-bottom: 10px;
+		}
+		&__title {
+			margin-bottom: 5px;
 		}
 	}
 }
@@ -767,6 +886,48 @@
 			font-size: 16px;
 		}
 	}
+
+	.product {
+		&__box {
+			display: block;
+			border-bottom: 1px solid $gray2;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+		}
+		&__info {
+			border-bottom: none;
+			width: 100%;
+		}
+		&__photo {
+			width: 100%;
+			img {
+				max-width: 100%;
+				width: auto;
+			}
+		}
+	}
+
+	.documents {
+		&__item {
+			margin-bottom: 30px;
+			flex-wrap: wrap;
+		}
+		&__icon {
+			margin-right: 15px;
+			img {
+				width: 40px;
+			}
+		}
+		&__title {
+			width: calc(100% - 55px);
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+		&__data {
+			margin-top: 10px;
+			width: 100%;
+		}
+	}
 }
 
 @media(max-width: 414px) {
@@ -790,6 +951,14 @@
 				font-size: 20px;
 			}
 			.btn {
+				width: 100%;
+			}
+		}
+	}
+
+	.product {
+		&__photo {
+			img {
 				width: 100%;
 			}
 		}

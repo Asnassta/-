@@ -748,6 +748,11 @@
       top: 0;
       right: 0;
       z-index: 1; }
+    .page-intro .container {
+      position: relative;
+      z-index: 2; }
+    .page-intro .title {
+      max-width: 830px; }
   .page-nav {
     margin-top: 60px; }
     .page-nav__inner {
@@ -1186,6 +1191,105 @@
       color: #1992D6; }
 
 /*==========/contact==========*/
+/*===========Product========*/
+.product__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 60px; }
+  .product__box:last-child {
+    margin-bottom: 0; }
+
+.product__photo {
+  display: block;
+  width: 24%;
+  min-width: 160px; }
+  .product__photo img {
+    width: 100%; }
+
+.product__info {
+  width: 76%;
+  margin-right: 25px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 30px; }
+
+.product__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #292929;
+  line-height: 1.5;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  display: inline-block;
+  margin-bottom: 10px; }
+  @media (max-width: 1920px) {
+    .product__title {
+      font-size: calc(16px + 8 * ((100vw - 320px) / 1600)); } }
+  .product__title:hover {
+    color: #2E396E; }
+
+.product__description {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #292929;
+  line-height: 1.3; }
+  @media (max-width: 1920px) {
+    .product__description {
+      font-size: calc(14px + 4 * ((100vw - 320px) / 1600)); } }
+
+/*===========/product========*/
+/*==========Documents==========*/
+.documents__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 60px; }
+  .documents__item:last-child {
+    margin-bottom: 0; }
+  .documents__item:hover .documents__title {
+    color: #2E396E; }
+
+.documents__icon {
+  margin-right: 24px; }
+
+.documents__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #292929;
+  line-height: 1.5;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 20px; }
+  @media (max-width: 1920px) {
+    .documents__title {
+      font-size: calc(14px + 10 * ((100vw - 320px) / 1600)); } }
+
+.documents__data {
+  margin-left: auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #A3A3A3;
+  line-height: 1.3;
+  white-space: nowrap; }
+  @media (max-width: 1920px) {
+    .documents__data {
+      font-size: calc(14px + 6 * ((100vw - 320px) / 1600)); } }
+
+/*==========/documents==========*/
 /*============Adaptive=======*/
 @media (max-width: 1170px) {
   .page-info {
@@ -1209,7 +1313,13 @@
     display: block; }
     .vacancy-box__row > * {
       margin-left: 0;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .product__box {
+    margin-bottom: 30px; }
+  .product__info {
+    padding-bottom: 10px; }
+  .product__title {
+    margin-bottom: 5px; } }
 
 @media (max-width: 992px) {
   .page-intro {
@@ -1298,7 +1408,35 @@
     font-size: 20px;
     margin-bottom: 10px; }
   .contact__info {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .product__box {
+    display: block;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+  .product__info {
+    border-bottom: none;
+    width: 100%; }
+  .product__photo {
+    width: 100%; }
+    .product__photo img {
+      max-width: 100%;
+      width: auto; }
+  .documents__item {
+    margin-bottom: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .documents__icon {
+    margin-right: 15px; }
+    .documents__icon img {
+      width: 40px; }
+  .documents__title {
+    width: calc(100% - 55px);
+    margin-right: 0;
+    margin-bottom: 0; }
+  .documents__data {
+    margin-top: 10px;
+    width: 100%; } }
 
 @media (max-width: 414px) {
   .vacancy.mb-60 {
@@ -1312,6 +1450,8 @@
   .vacancy-box__price {
     font-size: 20px; }
   .vacancy-box .btn {
+    width: 100%; }
+  .product__photo img {
     width: 100%; } }
 
 /*============/adaptive=======*/
